@@ -5,6 +5,8 @@ function canvasStart(idOfCanvas, dimensions) {
   return "ctx has been created. Use this for your canvas!";
 }
 var canvas = {
+    fontSizing: var fontSizing = "12px";
+    font: var font = "Times New Roman";
 	rectangle: function rectangle(left, top, width, height) {
 		ctx.fillRect(arguments[0], arguments[1], arguments[2], arguments[3]);
 	},
@@ -13,5 +15,8 @@ var canvas = {
     }, 
     strokeColor: function strokeColor(hexcolor) {
       ctx.strokeStyle=arguments[0];
+    }
+    text: function text(text, left, top) {
+      ctx.fillText(arguments[0], arguments[1], arguments[2]);
     }
 }
