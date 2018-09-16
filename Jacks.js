@@ -5,8 +5,8 @@ function canvasStart(idOfCanvas, dimensions) {
   return "ctx has been created. Use this for your canvas!";
 }
 var canvas = {
-    fontSizing: var fontSizing = "12px";
-    font: var font = "Times New Roman";
+    fontSizing: fontSizing = "50px",
+    font: font = "Times New Roman",
 	rectangle: function rectangle(left, top, width, height) {
 		ctx.fillRect(arguments[0], arguments[1], arguments[2], arguments[3]);
 	},
@@ -15,8 +15,18 @@ var canvas = {
     }, 
     strokeColor: function strokeColor(hexcolor) {
       ctx.strokeStyle=arguments[0];
-    }
+    },
     text: function text(text, left, top) {
+      ctx.font = canvas.fontSizing + " " + canvas.font;
       ctx.fillText(arguments[0], arguments[1], arguments[2]);
+    },
+    addLayer: function addLayer(layer_number, width, height, id) {
+      var c = document.createElement("canvas");
+      c.setAttribute("width", arguments[1]);
+      c.setAttribute("height", arguments[2]);
+      c.setAttribute("id", arguments[3]);
+      c.style.zIndex=arguments[0];
+      c.stlye.position="absolute";
+      document.body.appendChild(c);
     }
 }
