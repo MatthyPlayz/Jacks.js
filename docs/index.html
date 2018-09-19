@@ -1,0 +1,46 @@
+<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+<body background="img/bg.jpg" />
+<font face="Nunito">
+  <center>
+    <img src="img/logo.png" width="128" height="128"></img>
+    <h1 id="mainheading">Make beautiful canvas art in seconds.</h1>
+	<iframe id="exampleIframe" src="iframes/main.html" width="537" height="80" style="color: white;"></iframe>
+    <textarea id="textb" rows="5" cols="74" readonly>
+    </textarea>
+  </center>
+</font>
+<style>
+  #mainheading {
+    position: absolute;
+    top: 25%;
+  }
+  #textb {
+    position: absolute;
+    top: 50%;
+  }
+  #exampleIframe {
+    position: absolute;
+    top: 35%;
+  }
+  #descriptionA {
+    position: absolute;
+    top: 100%;
+  }
+</style>
+<script>
+  document.getElementById("mainheading").style.left=screen.width / 3.5;
+  document.getElementById("textb").style.left=screen.width / 3.5;
+  document.getElementById("exampleIframe").style.left=screen.width / 3.5;
+  document.getElementById("textb").innerHTML='<canvas id="examplea" width="300" height="100"></canvas>\n<script>\n  canvasStart("examplea", "2d");\n  canvas.rectangle(1, 1, 100, 100);\n  canvas.text(\"LOGO\", 100, 50);\n<\/script>';
+</script>
+<div id="descriptionA" style="overflow: auto; background-color: gray;">
+  <font face="Nunito">
+    Oh yeah, and by the way, we've got <span id="loc"></span> lines of code<br /> 
+	in the uncompressed version :)
+  </font>
+  <script>
+    var linesCode = "32";
+    var span = document.getElementById("loc");
+    span.appendChild(document.createTextNode(linesCode));
+  </script>
+</div>
