@@ -1,1 +1,1 @@
-<iframe src="docs/index.html"></iframe>
+<iframe src="https://matthyplayz.github.io/Jacks.js/"></iframe>
