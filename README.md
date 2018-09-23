@@ -1,2 +1,2 @@
-<div style="overflow: auto; color: cyan;"><img src="logo.png" width="25" height="25" /><h1>Jacks.js</h1></div>
-<p>Jacks.js is a easy, fun and simple way of canvas managing.</p>
+<iframe style="width: 100%; height: 100%;" src="docs/index.html"></iframe>
+
