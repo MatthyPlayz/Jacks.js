@@ -1,2 +1,3 @@
-<iframe style="width: 100%; height: 100%;" src="https://matthyplayz.github.io/Jacks.js/"></iframe>
+<blockquote class="embedly-card"><h4><a href="https://matthyplayz.github.io/Jacks.js/">null</a></h4><p>null</p></blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 
