@@ -1,0 +1,4 @@
+Just a notice:
+The node version requires:
+* NPM
+  - HTTP from npm 
